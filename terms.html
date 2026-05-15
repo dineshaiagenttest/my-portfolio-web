@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms &amp; Conditions — Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script>
+    (function() {
+      var s = localStorage.getItem('theme');
+      var p = s ? s : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      if (p === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .terms-hero {
+      padding-top: calc(var(--nav-h) + 5rem);
+      padding-bottom: 3rem;
+    }
+
+    .terms-body {
+      padding-bottom: 7rem;
+    }
+
+    .terms-container {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .terms-hero-tag {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      text-transform: lowercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .terms-title {
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      font-weight: 700;
+      letter-spacing: -1.5px;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .terms-meta {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      font-family: var(--font-mono);
+    }
+
+    .terms-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 3rem 0;
+    }
+
+    .terms-section {
+      margin-bottom: 2.75rem;
+    }
+
+    .terms-section h2 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--accent);
+      font-family: var(--font-mono);
+      letter-spacing: 0.04em;
+      margin-bottom: 0.85rem;
+    }
+
+    .terms-section p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 0.85rem;
+    }
+
+    .terms-section ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .terms-section ul li {
+      color: var(--text-muted);
+      font-size: 1rem;
+      line-height: 1.7;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .terms-section ul li::before {
+      content: '▸';
+      color: var(--accent);
+      font-size: 0.75rem;
+      margin-top: 0.35rem;
+      flex-shrink: 0;
+    }
+
+    .terms-contact-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem 2rem;
+      margin-top: 1rem;
+    }
+
+    .terms-contact-box p {
+      margin-bottom: 0 !important;
+    }
+
+    .terms-contact-box a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .terms-contact-box a:hover {
+      color: var(--accent-hover);
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      font-family: var(--font-mono);
+      transition: color var(--transition);
+      margin-bottom: 2rem;
+    }
+
+    .back-link:hover { color: var(--accent); }
+
+    .back-link svg { width: 14px; height: 14px; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">YN<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" aria-pressed="false">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="terms-hero">
+    <div class="terms-container">
+      <a href="index.html" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back to portfolio
+      </a>
+      <p class="terms-hero-tag">legal</p>
+      <h1 class="terms-title">Terms &amp; <span class="accent">Conditions</span></h1>
+      <p class="terms-meta">Last updated: May 15, 2026</p>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="terms-body">
+    <div class="terms-container">
+      <hr class="terms-divider" />
+
+      <div class="terms-section">
+        <h2>01. Overview</h2>
+        <p>
+          Welcome to my portfolio website. By accessing or using this site, you agree to be
+          bound by these Terms and Conditions. This is a personal portfolio and does not
+          constitute a commercial service. Please read these terms carefully before using the site.
+        </p>
+      </div>
+
+      <div class="terms-section">
+        <h2>02. Intellectual Property</h2>
+        <p>
+          All content on this website — including but not limited to text, code snippets,
+          project descriptions, design, and graphics — is my original work unless otherwise
+          credited. You may not reproduce, distribute, or use any content without prior
+          written permission.
+        </p>
+        <ul>
+          <li>Project code linked to external repositories is governed by the license stated in each repo.</li>
+          <li>Open-source contributions are subject to their respective open-source licenses.</li>
+          <li>Third-party logos and trademarks belong to their respective owners.</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <h2>03. Use of This Site</h2>
+        <p>You agree to use this site only for lawful purposes. You must not:</p>
+        <ul>
+          <li>Attempt to gain unauthorised access to any part of the site or its infrastructure.</li>
+          <li>Use automated scrapers or bots to harvest content without permission.</li>
+          <li>Misrepresent my work, identity, or affiliation with any organisation.</li>
+          <li>Use any content for commercial purposes without explicit written consent.</li>
+        </ul>
+      </div>
+
+      <div class="terms-section">
+        <h2>04. Disclaimer of Warranties</h2>
+        <p>
+          This site is provided on an "as is" and "as available" basis. I make no warranties,
+          express or implied, regarding the accuracy, completeness, or reliability of any
+          content. I reserve the right to update, modify, or remove content at any time
+          without prior notice.
+        </p>
+      </div>
+
+      <div class="terms-section">
+        <h2>05. Limitation of Liability</h2>
+        <p>
+          To the fullest extent permitted by law, I shall not be liable for any direct,
+          indirect, incidental, or consequential damages arising from your use of — or
+          inability to use — this website or any content linked from it.
+        </p>
+      </div>
+
+      <div class="terms-section">
+        <h2>06. External Links</h2>
+        <p>
+          This site may contain links to third-party websites (GitHub, LinkedIn, etc.).
+          These links are provided for convenience only. I have no control over the content
+          of those sites and accept no responsibility for them or for any loss or damage
+          that may arise from your use of them.
+        </p>
+      </div>
+
+      <div class="terms-section">
+        <h2>07. Privacy</h2>
+        <p>
+          This portfolio does not collect personal data or use tracking cookies. If you
+          contact me via email, your information will only be used to respond to your
+          enquiry and will never be shared with third parties.
+        </p>
+      </div>
+
+      <div class="terms-section">
+        <h2>08. Changes to These Terms</h2>
+        <p>
+          I may update these Terms and Conditions from time to time. Continued use of the
+          site after any changes constitutes your acceptance of the revised terms. The
+          "Last updated" date at the top of this page will reflect any revisions.
+        </p>
+      </div>
+
+      <div class="terms-section">
+        <h2>09. Contact</h2>
+        <p>If you have any questions about these terms, please get in touch:</p>
+        <div class="terms-contact-box">
+          <p>
+            Email: <a href="mailto:your@email.com">your@email.com</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="mono">Built by <span class="accent">Your Name</span> · 2025</p>
+    <p class="footer-sub">Designed &amp; developed with care</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
